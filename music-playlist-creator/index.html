@@ -20,7 +20,7 @@
             
             <article class = "idcards">
                 <img class= "cardimg" src="assets/img/playlist.png" alt="photo of playlist">
-                <h2 class = "playlistTitle"> Playlist1</h2>
+                <h2 class = "playlistTitle" > Playlist1</h2>
                 <p class="authorTitle">Author</p>
                 <button class="likeButton">
                     <img src="assets/img/heart.png" alt="like button">
@@ -103,11 +103,12 @@
 
     <div id= "playlistModal" class = "modal">
         <div class = "playlist-content">
+            <span class="close">&times;</span>
             <div class = "playlist-header">
-                <img id = "playlistImage" src="assets/img/playlist.png" alt="Photo of Album">
+                <img id = "playlistImage" src="" alt="Photo of Album">
                 <div class="playlist-info">
-                    <h2>Playlist Title</h2>
-                    <h3>Artist Name</h3>
+                    <h2 id="playlistName"></h2>
+                    <h3 id ="artistName"></h3>
                 </div>    
             </div>
             
@@ -117,7 +118,9 @@
                     <img src="assets/img/playlist.png" alt="Image of Song" class="song-thumbnail">
                     <div class="song-details">
                         <h4>Song Title</h4>
-                        <h4>Artist Name<h4>
+                        <br>
+                        <h4>Artist Name</h4>
+                        <br>
                         <h4>Album Name</h4>
                     </div>
                     <div id= "duration">
@@ -129,8 +132,11 @@
                     <img src="assets/img/playlist.png" alt="Image of Song" class="song-thumbnail">
                     <div class="song-details">
                         <h4>Song Title</h4>
+                        <br>
                         <h4>Artist Name<h4>
+                        <br>
                         <h4>Album Name</h4>
+                        
                     </div>
                     <div id="duration">
                         <h4>0:00</h4>
@@ -141,7 +147,9 @@
                     <img src="assets/img/playlist.png" alt="Image of Song" class="song-thumbnail">
                     <div class="song-details">
                         <h4>Song Title</h4>
+                        <br>
                         <h4>Artist Name<h4>
+                        <br>
                         <h4>Album Name</h4>
                     </div>
                     <div id="duration">
