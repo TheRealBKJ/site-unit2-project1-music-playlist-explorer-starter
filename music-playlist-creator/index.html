@@ -101,15 +101,29 @@
          </section>
     </main>
 
-    <div id= "playlistModal" class = modal>
+    <div id= "playlistModal" class = "modal">
         <div class = "playlist-content">
-            <img id = "playlistImage" src="" alt="">
-            <h2>Playlist Title</h2>
-            <h3>Artist Name</h3>
-            <ul classname = "songContainer">
-                <li classname = "songBox">Song1</li>
-                <li classname = "songBox">Song2</li>
-                <li classname = "songBox">Song3</li>
+            <div class = "playlist-header">
+                <img id = "playlistImage" src="" alt="">
+                <div class="playlist-info">
+                    <h2>Playlist Title</h2>
+                    <h3>Artist Name</h3>
+                </div>    
+            </div>
+            
+            <ul class = "songContainer">
+                
+                <li class = "songBox">
+                    <img src="" alt="Image of Song" class="song-thumbnail">
+                    <div class="song-details">
+                        <h4>Song Title</h4>
+                        <h5>Artist Name<h5>
+                        <h6>Album Name</h6>
+                    </div>
+                    <div>
+                        <h4>0:00</h4>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
