@@ -26,7 +26,8 @@ footer {
     display: grid;
     column-gap: 20px;
     row-gap: 100px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
     margin-left: 10%;
     margin-top: 5%;
 }
@@ -34,7 +35,7 @@ footer {
 
 
 .playlist-cards .idcards{
-    text-align: left;
+    text-align: center;
     width: 230px;
     height:325px;
     border-radius: 5%;
@@ -51,7 +52,6 @@ footer {
     width: 80%;
     height: 50%;
     margin-top: 10%;
-    padding-left: 10%;
 }
 
 .likeButton{
@@ -76,6 +76,7 @@ footer {
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
 }
+
 
 .playlist-content{
     

@@ -1,0 +1,63 @@
+[   
+    
+
+    {
+        "playlistID" : 1 , 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    },
+    {
+        "playlistID" : 2, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    },
+    {
+        "playlistID" : 3, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    },
+    {
+        "playlistID" : 4, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    },
+    {
+        "playlistID" : 5, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    },
+    {
+        "playlistID" : 6, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    },
+    {
+        "playlistID" : 7, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png" ,
+        "songs" : []
+    },
+    {
+        "playlistID" : 8, 
+        "playlist_name" :"",
+        "playlist_author":"",
+        "playlist_art" : "assets/img/playlist.png",
+        "songs" : []
+    }
+    
+
+
+]
