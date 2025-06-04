@@ -4,3 +4,52 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+
+
+header{
+    background-color: grey;
+    border: 2px solid black;
+    text-align: center;
+}
+
+footer {
+    background-color: grey;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    border: 2px solid black;
+}
+
+.playlist-cards{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px;
+}
+
+.playlist-cards .idcards{
+    text-align: left;
+    border: 2px solid black;
+    width: 230px;
+    height:325px;
+    background-color: white;
+}
+.playlist-cards .cardimg{
+    width: 80%;
+    height: 50%;
+    margin-top: 10%;
+    padding-left: 10%;
+}
+
+.likeButton{
+    background-color: white;
+    border: none;
+}
+
+.likeButton img{
+    width: 20px;
+    height: 20px;
+}
