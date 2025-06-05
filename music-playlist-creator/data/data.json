@@ -5,26 +5,83 @@
         "playlist_author":"Drake",
         "playlist_art" : "https://picsum.photos/id/237/200/300",
         "songs" : [
-            "God's Plan",
-            "One Dance",
-            "Hotline Bling",
-            "In My Feelings",
-            "Nonstop",
-            "Started From the Bottom",
-            "Hold On, We're Going Home",
-            "Best I Ever Had",
-            "Take Care",
-            "Marvin's Room",
-            "The Calm",
-            "Tuscan Leather",
-            "Wu-Tang Forever",
-            "Two Birds, One Stone",
-            "Glow",
-            "Skepta Interlude",
-            "Redemption",
-            "Do Not Disturb",
-            "Nice for What",
-            "I'm Upset"
+            {
+                "song_name": "God's Plan",
+                "artist_name": "Drake",
+                "album_name": "Scorpion",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:19"
+            },
+            {
+                "song_name": "One Dance",
+                "artist_name": "Drake (feat. WizKid & Kyla)",
+                "album_name": "Views",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "2:53"
+            },
+            {
+                "song_name": "Hotline Bling",
+                "artist_name": "Drake",
+                "album_name": "Views",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "4:27"
+            },
+            {
+                "song_name": "In My Feelings",
+                "artist_name": "Drake",
+                "album_name": "Scorpion",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "3:37"
+            },
+            {
+                "song_name": "Nonstop",
+                "artist_name": "Drake",
+                "album_name": "Scorpion",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "3:58"
+            },
+            {
+                "song_name": "Started From the Bottom",
+                "artist_name": "Drake",
+                "album_name": "Nothing Was the Same",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "3:54"
+            },
+            {
+                "song_name": "Hold On, We're Going Home",
+                "artist_name": "Drake (feat. Majid Jordan)",
+                "album_name": "Nothing Was the Same",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "3:47"
+            },
+            {
+                "song_name": "Best I Ever Had",
+                "artist_name": "Drake",
+                "album_name": "So Far Gone",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "4:18"
+            },
+            {
+                "song_name": "Take Care",
+                "artist_name": "Drake (feat. Rihanna)",
+                "album_name": "Take Care",
+                "image": "https://picsum.photos/200/300?random=9",
+                "duration": "4:37"
+            },
+            {
+                "song_name": "Marvin's Room",
+                "artist_name": "Drake",
+                "album_name": "Take Care",
+                "image": "https://picsum.photos/200/300?random=10",
+                "duration": "5:47"
+            },
+            {
+                "song_name": "The Calm",
+                "artist_name": "Drake",
+                "album_name": "So Far Gone",
+                "image": "https://picsum.photos/200/300?random=11",
+                "duration": "3.11"
+            }
         ]
     },
     {
@@ -33,54 +90,134 @@
         "playlist_author":"Future",
         "playlist_art" : "https://picsum.photos/seed/picsum/200/300",
         "songs" : [
-            "Mask Off",
-            "Jumpman",
-            "Used to This",
-            "March Madness",
-            "Codeine Crazy",
-            "Xanny Family",
-            "Low Life",
-            "Mink Flow",
-            "Feds Did a Sweep",
-            "Program",
-            "Seven Rings",
-            "Kno the Future",
-            "I'm So Groovy",
-            "My Savages",
-            "Group Home",
-            "Lay Up",
-            "Might as Well",
-            "All da Smoke",
-            "Fresh Outta Feds",
-            "Relationship"
+            {
+                "song_name": "Mask Off",
+                "artist_name": "Future",
+                "album_name": "FUTURE",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:23"
+            },
+            {
+                "song_name": "Jumpman",
+                "artist_name": "Drake (feat. Future)",
+                "album_name": "What a Time to Be Alive",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "3:34"
+            },
+            {
+                "song_name": "Used to This",
+                "artist_name": "Future (feat. Drake)",
+                "album_name": "Used to This",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "3:00"
+            },
+            {
+                "song_name": "March Madness",
+                "artist_name": "Future",
+                "album_name": "56 Nights",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "4:35"
+            },
+            {
+                "song_name": "Xanny Family",
+                "artist_name": "Future",
+                "album_name": "EVOL",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "3:05"
+            },
+            {
+                "song_name": "Low Life",
+                "artist_name": "Future (feat. The Weeknd)",
+                "album_name": "EVOL",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "5:13"
+            },
+            {
+                "song_name": "Mink Flow",
+                "artist_name": "Future",
+                "album_name": "SUPER SLIMEY",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "2:58"
+            },
+            {
+                "song_name": "Feds Did a Sweep",
+                "artist_name": "Future",
+                "album_name": "SUPER SLIMEY",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "4:30"
+            }
         ]
     },
+
     {
         "playlistID" : 3, 
         "playlist_name" :"Opium",
         "playlist_author":"Destroy Lonely",
         "playlist_art" : "https://picsum.photos/200/300?grayscale",
         "songs" : [
-            "Nostalgia",
-            "Dark Knight",
-            "Vibes",
-            "Lost in Space",
-            "Ghost",
-            "Breathe",
-            "Hollow",
-            "Echoes",
-            "Shattered Dreams",
-            "Fading Away",
-            "Into the Abyss",
-            "Whispers in the Dark",
-            "Shadows on the Wall",
-            "Voices in My Head",
-            "Demons in My Mind",
-            "Haunted Memories",
-            "Trapped in My Thoughts",
-            "Cursed",
-            "Paranoid",
-            "Insomnia"
+            {
+                "song_name": "Nostalgia",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:40"
+            },
+            {
+                "song_name": "Dark Knight",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "3:15"
+            },
+            {
+                "song_name": "Vibes",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "3:15"
+            },
+            {
+                "song_name": "Lost in Space",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "4:10"
+            },
+            {
+                "song_name": "Ghost",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "3:50"
+            },
+            {
+                "song_name": "Breathe",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "3:20"
+            },
+            {
+                "song_name": "Hollow",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "4:00"
+            },
+            {
+                "song_name": "Echoes",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "3:45"
+            },
+            {
+                "song_name": "Shattered Dreams",
+                "artist_name": "Destroy Lonely",
+                "album_name": "Opium",
+                "image": "https://picsum.photos/200/300?random=9",
+                "duration": "4:25"
+            }
         ]
     },
     {
@@ -89,26 +226,83 @@
         "playlist_author":"Playboi Carti",
         "playlist_art" : "https://picsum.photos/200/300/?blur",
         "songs" : [
-            "Magnolia",
-            "Woke Up Like This*",
-            "Let It Blunt",
-            "Half & Half",
-            "New Choppa",
-            "Middle of the Summer",
-            "No Time",
-            "Do That Shit",
-            "Lil Baby",
-            "Pull Up",
-            "Shoota",
-            "Poke It Out",
-            "R.I.P. Fredo",
-            "Earfquake",
-            "Die Lit",
-            "Long Live A$AP",
-            "Flex",
-            "Kelly K",
-            "Foreign",
-            "YRN 2K"
+            {
+                "song_name": "Magnolia",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:40"
+            },
+            {
+                "song_name": "Woke Up Like This*",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "3:15"
+            },
+            {
+                "song_name": "Let It Blunt",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "3:20"
+            },
+            {
+                "song_name": "Half & Half",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "3:10"
+            },
+            {
+                "song_name": "New Choppa",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "3:25"
+            },
+            {
+                "song_name": "Middle of the Summer",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "3:30"
+            },
+            {
+                "song_name": "No Time",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "3:35"
+            },
+            {
+                "song_name": "Do That Shit",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "3:40"
+            },
+            {
+                "song_name": "Lil Baby",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=9",
+                "duration": "3:45"
+            },
+            {
+                "song_name": "Pull Up",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=10",
+                "duration": "3:50"
+            },
+            {
+                "song_name": "Shoota",
+                "artist_name": "Playboi Carti",
+                "album_name": "Self-Titled",
+                "image": "https://picsum.photos/200/300?random=11",
+                "duration":"4:04"
+            }
         ]
     },
     {
@@ -117,24 +311,55 @@
         "playlist_author":"Lil Yachty",
         "playlist_art" : "https://picsum.photos/id/870/200/300?grayscale&blur=2",
         "songs" : [
-            "Broccoli",
-            "One Night",
-            "T-Shirt",
-            "With Them",
-            "Harley",
-            "Peek a Boo",
-            "Ice Tray",
-            "Baby Daddy",
-            "All In",
-            "She Ready",
-            "DNF",
-            "No Hook",
-            "Out the Window",
-            "X Men",
-            "Whole Lotta Guap",
-            "Wanna Be Us",
-            "I'm the Plug",
-            "Minnesota"
+            {
+                "song_name": "Broccoli",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:40"
+            },
+            {
+                "song_name": "One Night",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "3:15"
+            },
+            {
+                "song_name": "T-Shirt",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "3:20"
+            },
+            {
+                "song_name": "With Them",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "3:10"
+            },
+            {
+                "song_name": "Harley",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "3:25"
+            },
+            {
+                "song_name": "Peek a Boo",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "3:30"
+            },
+            {
+                "song_name": "Ice Tray",
+                "artist_name": "Lil Yachty",
+                "album_name": "Michigan Boat Boy",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "3:35"
+            }
         ]
     },
     {
@@ -143,50 +368,140 @@
         "playlist_author":"Veeze",
         "playlist_art" : "https://picsum.photos/201/300",
         "songs" : [
-            "Ganger",
-            "Money on My Mind",
-            "No Cap",
-            "Ride or Die",
-            "Street Life",
-            "Fast Lane",
-            "Money Maker",
-            "Get It In",
-            "Run It Up",
-            "Flexin'",
-            "Savage",
-            "Poppin'",
-            "Drip Too Hard",
-            "Who You Foolin'",
-            "Ayy Macarena",
-            "Flossin'",
-            "Money Walks",
-            "G Code"
+            {
+                "song_name": "Ganger",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:40"
+            },
+            {
+                "song_name": "Money on My Mind",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "3:15"
+            },
+            {
+                "song_name": "No Cap",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "3:20"
+            },
+            {
+                "song_name": "Ride or Die",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "3:10"
+            },
+            {
+                "song_name": "Street Life",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "3:25"
+            },
+            {
+                "song_name": "Fast Lane",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "3:30"
+            },
+            {
+                "song_name": "Money Maker",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "3:35"
+            },
+            {
+                "song_name": "Get It In",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "3:40"
+            },
+            {
+                "song_name": "Run It Up",
+                "artist_name": "Veeze",
+                "album_name": "Ganger",
+                "image": "https://picsum.photos/200/300?random=9",
+                "duration": "3:45"
+            }
         ]
     },
     {
         "playlistID" : 7, 
-        "playlist_name" :"The best Playlst",
+        "playlist_name" :"The best Playlist",
         "playlist_author":"Braden Jones",
         "playlist_art" : "https://picsum.photos/200/300",
         "songs" : [
-            "Happy",
-            "Uptown Funk",
-            "Can't Stop the Feeling!",
-            "We Found Love",
-            "SexyBack",
-            "Crazy",
-            "I Gotta Feeling",
-            "Pumped Up Kicks",
-            "Shut Up and Dance",
-            "All About That Bass",
-            "Cake by the Ocean",
-            "Sugar",
-            "Try Everything",
-            "Brave",
-            "Radioactive",
-            "Best Day of My Life",
-            "On Top of the World",
-            "Unstoppable"
+            {
+                "song_name": "Happy",
+                "artist_name": "Pharrell Williams",
+                "album_name": "G I R L",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "3:53"
+            },
+            {
+                "song_name": "Uptown Funk",
+                "artist_name": "Mark Ronson ft. Bruno Mars",
+                "album_name": "Uptown Special",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "4:38"
+            },
+            {
+                "song_name": "Can't Stop the Feeling!",
+                "artist_name": "Justin Timberlake",
+                "album_name": "Trolls: Original Motion Picture Soundtrack",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "3:56"
+            },
+            {
+                "song_name": "We Found Love",
+                "artist_name": "Rihanna ft. Calvin Harris",
+                "album_name": "Talk That Talk",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "3:35"
+            },
+            {
+                "song_name": "SexyBack",
+                "artist_name": "Justin Timberlake",
+                "album_name": "FutureSex/LoveSounds",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "4:02"
+            },
+            {
+                "song_name": "Crazy",
+                "artist_name": "Gnarls Barkley",
+                "album_name": "St. Elsewhere",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "2:58"
+            },
+            {
+                "song_name": "I Gotta Feeling",
+                "artist_name": "The Black Eyed Peas",
+                "album_name": "The E.N.D.",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "4:49"
+            },
+            {
+                "song_name": "Pumped Up Kicks",
+                "artist_name": "Foster the People",
+                "album_name": "Torches",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "3:23"
+            },
+            {
+                "song_name": "Shut Up and Dance",
+                "artist_name": "Walk the Moon",
+                "album_name": "Talking Is Hard",
+                "image": "https://picsum.photos/200/300?random=9",
+                "duration": "3:17"
+            }
         ]
     },
     {
@@ -195,24 +510,69 @@
         "playlist_author":"Rick Ross",
         "playlist_art" : "https://picsum.photos/199/300",
         "songs" : [
-            "Hustlin'",
-            "Push It",
-            "Aston Martin Music",
-            "You the Boss",
-            "Diced Pineapples",
-            "So Sophisticated",
-            "Touch'N You",
-            "Sixteen",
-            "Amsterdam",
-            "Stay Schemin'",
-            "Nobody",
-            "Freaky Hoe",
-            "Ashes to Ashes",
-            "John Doe",
-            "Carol City",
-            "Maybach Music IV",
-            "I Think She Like Me",
-            "Gold Roses"
+            {
+                "song_name": "Hustlin'",
+                "artist_name": "Rick Ross",
+                "album_name": "Port of Miami",
+                "image": "https://picsum.photos/200/300?random=1",
+                "duration": "4:14"
+            },
+            {
+                "song_name": "Push It",
+                "artist_name": "Rick Ross",
+                "album_name": "Port of Miami",
+                "image": "https://picsum.photos/200/300?random=2",
+                "duration": "4:28"
+            },
+            {
+                "song_name": "Aston Martin Music",
+                "artist_name": "Rick Ross ft. Drake and Chrisette Michele",
+                "album_name": "Teflon Don",
+                "image": "https://picsum.photos/200/300?random=3",
+                "duration": "4:30"
+            },
+            {
+                "song_name": "You the Boss",
+                "artist_name": "Rick Ross ft. Nicki Minaj",
+                "album_name": "Rich Forever",
+                "image": "https://picsum.photos/200/300?random=4",
+                "duration": "4:40"
+            },
+            {
+                "song_name": "Diced Pineapples",
+                "artist_name": "Rick Ross ft. Wale and Drake",
+                "album_name": "God Forgives, I Don't",
+                "image": "https://picsum.photos/200/300?random=5",
+                "duration": "4:36"
+            },
+            {
+                "song_name": "So Sophisticated",
+                "artist_name": "Rick Ross ft. Meek Mill",
+                "album_name": "God Forgives, I Don't",
+                "image": "https://picsum.photos/200/300?random=6",
+                "duration": "4:12"
+            },
+            {
+                "song_name": "Touch'N You",
+                "artist_name": "Rick Ross ft. Usher",
+                "album_name": "God Forgives, I Don't",
+                "image": "https://picsum.photos/200/300?random=7",
+                "duration": "4:16"
+            },
+            {
+                "song_name": "Sixteen",
+                "artist_name": "Rick Ross ft. Andre 3000",
+                "album_name": "Rich Forever",
+                "image": "https://picsum.photos/200/300?random=8",
+                "duration": "4:05"
+            },
+            {
+                "song_name": "Amsterdam",
+                "artist_name": "Rick Ross",
+                "album_name": "Mastermind",
+                "image": "https://picsum.photos/200/300?random=9",
+                "duration": "3:51"
+            }
         ]
     }
 ]
