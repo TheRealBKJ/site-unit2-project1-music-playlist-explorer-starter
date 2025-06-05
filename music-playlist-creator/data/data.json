@@ -435,7 +435,7 @@
     },
     {
         "playlistID" : 7, 
-        "playlist_name" :"The best Playlist",
+        "playlist_name" :"The Best Playlist",
         "playlist_author":"Braden Jones",
         "playlist_art" : "https://picsum.photos/200/300",
         "songs" : [

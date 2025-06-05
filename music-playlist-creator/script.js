@@ -33,7 +33,7 @@ function createCard(card){
         <h2 class="playlistTitle">${card.playlist_name}</h2>
         <p class="authorTitle">${card.playlist_author}</p>
         <button class="likeButton">
-            <img src="assets/img/heart.png" alt="like button">
+            <img src="assets/img/heart.png" alt="like button" id= "likeimg">
             <span id="like-count">Like Count: 0</span>
         </button>
     `;
@@ -87,6 +87,9 @@ function openModal(title,image,artist,songs) {
     document.getElementById('playlistImage').src = image;
     document.getElementById('playlistName').innerText = title;
     document.getElementById('artistName').innerText= artist ;
+
+
+    /* Loads orignal songs in original order */
     const songsContent = document.getElementById('songsCont');
     songsContent.innerHTML = '';
     // assuming each json object has 3 or more songs which needs to be a thing
@@ -105,15 +108,42 @@ function openModal(title,image,artist,songs) {
         `;
         songsContent.appendChild(songElement);
     }
-    
 
-
-
-
-
-    
+    /* Shuffle logic*/
+    const shuffleButton = document.getElementById('shuffle-button')
+    shuffleButton.addEventListener('click', () => {
+        const songs = songsContent.children;
+        const array = Array.from(songs);
+        const shuffledSongs = shuffle(array)
+        songsContent.innerHTML = '';
+        shuffledSongs.forEach((shuffleSong) =>{
+            songsContent.appendChild(shuffleSong);
+        });
+    });
     modal.style.display ="block" /* displays modal*/
 }
+
+
+
+/* shuffle function from stackOverFlow*/
+function shuffle(array){
+    let currentIndex = array.length;
+    
+    while (currentIndex != 0) {
+
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+    return array
+}
+
+
+
+
+
 /* add arrays to it later*/
 cards.forEach((card) => {
     card.addEventListener('click',() =>{
