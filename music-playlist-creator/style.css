@@ -29,18 +29,40 @@ footer {
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
 }
 
+@media (max-width: 768px) {
+    .playlist-cards{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+  .playlist-cards{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1200px){
+    .playlist-cards .idcards{
+        width: 350px;
+        height: 425px
+    }
+}
 
 
 .playlist-cards .idcards{
     text-align: center;
-    width: 230px;
-    height:325px;
+    width: 70%;
+    height:90%;
     border-radius: 5%;
     border: 2px solid black;
     background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .playlist-cards .idcards:hover{
