@@ -34,14 +34,39 @@ function createCard(card){
         <p class="authorTitle">${card.playlist_author}</p>
         <button class="likeButton">
             <img src="assets/img/heart.png" alt="like button">
-            <span>Like Count: 0</span>
+            <span id="like-count">Like Count: 0</span>
         </button>
     `;
     cardElement.addEventListener('click', () =>{
         openModal(card.playlist_name,card.playlist_art, card.playlist_author, card.songs);
     });
+
+    const likeButton = cardElement.querySelector('.likeButton');/* can access child elems easier */
+    let liked = false;
+    likeButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        liked = !liked;
+        toggleLikes(likeButton,liked)
+    })
     return cardElement;
 }
+
+
+
+function toggleLikes(likes,isLiked){
+    const likeCountNum = likes.querySelector('#like-count');
+    let likeCount = parseInt(likeCountNum.textContent.split(': ')[1])/* Splits like count info */
+    if (isLiked){
+        likeCount++;
+        likes.classList.add('liked')/* diff styling for if liked!*/
+    } else{
+        likeCount--;
+        likes.classList.remove('liked');
+    }
+    likeCountNum.textContent = `Like Count: ${likeCount}`;
+}
+
+
 
 // loads the cards into page when rendered
 document.addEventListener("DOMContentLoaded", () =>{
@@ -65,25 +90,28 @@ function openModal(title,image,artist,songs) {
     const songsContent = document.getElementById('songsCont');
     songsContent.innerHTML = '';
     // assuming each json object has 3 or more songs which needs to be a thing
-    for (let i = 0; i < 3; i++){
+    for (let i = 0; i < songs.length; i++){
         const song = songs[i];
         const songElement = document.createElement('li')
+        songElement.classList.add('songBox');
         songElement.innerHTML =`
             <img src="${song.image}" alt="Image of Song" class="song-thumbnail">
             <div class="song-details">
-                <h4 id = 'song-title'> ${song.song_name}</h4>
-                <br>
-                <h4 id = 'artist-name'>${song.artist_name}<h4>
-                <br>
-                <h4 id = 'album-name'>${song.album_name}</h4>
-                
-            </div>
-            <div id="duration">
-                <h4>${song.duration}</h4>
+                <h4 id = 'song-title'> Song: ${song.song_name}</h4>
+                <h4 id = 'artist-name'> Artist: ${song.artist_name}<h4>
+                <h4 id = 'album-name'> Album: ${song.album_name}</h4>
+                <h4 id="duration"> Duration: ${song.duration}</h4>
             </div>
         `;
         songsContent.appendChild(songElement);
     }
+    
+
+
+
+
+
+    
     modal.style.display ="block" /* displays modal*/
 }
 /* add arrays to it later*/
@@ -108,10 +136,6 @@ window.onclick = function(event) {
     }
 }
 
-// how to append 3 song boxes, use this 
-function createSongboxes (){
-    console.log("3 songs added")
-}
 
 
 

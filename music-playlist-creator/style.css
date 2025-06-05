@@ -22,6 +22,9 @@ footer {
     border: 2px solid black;
 }
 
+
+/* Playlist display and id cards*/
+
 .playlist-cards{
     display: grid;
     column-gap: 20px;
@@ -76,6 +79,10 @@ footer {
     margin-top: 10%;
 }
 
+
+
+/* Like button CSS*/
+
 .likeButton{
     background-color: white;
     border: none;
@@ -86,6 +93,27 @@ footer {
     height: 20px;
 }
 
+.likeButton:hover {
+    background-color: rgb(230, 38, 17);
+    color: rgb(217, 228, 8);
+    transform: scale(1.1);
+}
+
+
+.liked{
+    background-color: green;
+    color: white;
+}
+
+
+.liked:hover{
+    background-color: green;
+    transform: none;
+}
+
+
+
+/* song things on modal */
 
 .modal {
     display: none;
@@ -98,18 +126,17 @@ footer {
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
 }
-
-
 .playlist-content{
     
     background-color: #fefefe;
     padding: 20px;
     margin-left: 10%;
     margin-top: 5%;
-    border: 1px solid black;
+    border: 10px solid black;
     width: 80%;
     height: 80%;
-    border-radius: 10%;
+    border-radius: 3%;
+
 }
 
 .playlist-header{
@@ -124,45 +151,119 @@ footer {
     width: 300px;
     height: 200px;
     object-fit: cover;
+    border: 5px solid black;
+    border-radius: 10px;
+
 }
 
 .playlist-info{
     font-family: 'Courier New', Courier, monospace;
-    color: grey;
+    color: green;
+    font-size:24px;
+    font-weight: bold;
+    border: 5px solid black;
+    border-radius: 5px;
+    text-align: center;
 }
 
+#shuffle-button{
+    background-color: green;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    margin-left: 41%;
+    height:100px;
+    font-weight: bold;
+
+}
 
 .songBox{
     display: flex;
-    width: 80%;
+    width: 87.5%;
     height: 100px;
-    border: 2px solid black;
-    margin: 20px;
+    border: 5px solid black;
+    border-radius: 3px;
     margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    align-items: center;
 }
 
 .song-thumbnail{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 15%;
+    height: 100%;
     flex-shrink: 0;
+    object-fit: cover;
 }
 
 .song-details{
-    display: flex;
-    /* Stack items vertically */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
     font-size: 10px;
-    gap: 20%; 
-    margin-left: 10%;
-    white-space: nowrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    flex-grow: 1
 }
 
-#duration{
-    margin-top: 3%;
-    margin-left: auto;
-    font-weight: bold;
-    white-space: nowrap;
-    align-items: center;
+.song-details h4 {
+  margin-bottom: 0; 
+}
+
+/* media querys for diff heights of screen to fit it*/
+/* Small screens (e.g., mobile devices) */
+@media (max-height: 600px) {
+  .songBox {
+    height: 120px;
+  }
+  .song-thumbnail {
+    width: 15%;
+    height: 100%;
+  }
+  .song-details {
+    font-size: 12px;
+  }
+}
+
+/* Regular screens (e.g., desktop monitors) */
+@media (min-height: 601px) and (max-height: 900px) {
+  .songBox {
+    height: 150px;
+  }
+  .song-thumbnail {
+    width: 15%;
+    height: 100%;
+  }
+  .song-details {
+    font-size: 14px;
+  }
+}
+
+/* Large screens (e.g., large desktop monitors or TVs) */
+@media (min-height: 901px) {
+  .songBox {
+    height: 180px;
+  }
+  .song-thumbnail {
+    width: 15%;
+    height: 100%;
+  }
+  .song-details {
+    font-size: 16px;
+  }
+}
+
+/* Overflow for songs Content container, so we can see all songs and scroll down*/
+
+#songsCont{
+    max-height: 70%;
+    overflow-y: auto;
+    border: 8px solid green;
+    border-radius: 7px;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .close {
