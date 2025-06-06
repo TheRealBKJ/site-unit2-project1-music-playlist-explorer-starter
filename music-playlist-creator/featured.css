@@ -1,0 +1,96 @@
+/* css for feautered items */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #191414;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    border: 5px solid #1ed760;
+}
+
+footer {
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    border: 5px solid #1ed760;
+}
+.links-container {
+    float: right;
+    margin-right: 10px;
+}
+
+.links-to-another {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.links-to-another:hover {
+    color: rgb(55, 0, 255);
+    text-decoration: none;
+    transform: (1.1);
+    cursor: pointer;
+}
+
+#content-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#playlist-holder {
+    width: 50%;
+}
+
+#featured-image {
+    border: 5px solid white;
+    border-radius: 15px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 20%;
+    height: 400px;
+}
+#playlist-title {
+    margin-left: 20%;
+    border: 5px solid #1ed760;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    width: 400px;
+}
+#song-holder {
+    width: 50%;
+    margin-right: 15%;
+    margin-top: 100px;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 8px solid rgb(255, 255, 255);
+}
+
+.song-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #333;
+    width: 100%; /* adjust the width as needed */
+}
+
+.song-box img.song-thumbnail {
+    width: 100px; /* adjust the width as needed */
+    height: 100px; /* adjust the height as needed */      
+}
+
+.song-box .song-details {
+    color: #fff; /* white text color */
+}
+
+.song-boxh4 {
+    font-weight: bold; /* bold font weight */
+    margin-bottom: 5px;
+}
