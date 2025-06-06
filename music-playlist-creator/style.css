@@ -195,7 +195,7 @@ footer {
 
 .likeButton{
     text-align: center;
-    background-color: white;
+    background-color: #1ed760;
     border: 5px solid black;
     border-radius: 3px;
 
@@ -234,20 +234,30 @@ footer {
     color:black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background-color: white;
+    background-color: rgb(21, 0, 255);
     border: 5px solid black;
     border-radius: 3px;
 }
-
-#delete-button{
+#edit-button:hover{
+    background-color: rgb(21, 0, 255);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.delete-button{
     text-align: center;
     color:black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     border: 5px solid black;
     border-radius: 3px;
 
+}
+
+.delete-button:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
 }
 
 .liked{
@@ -451,3 +461,4 @@ footer {
     width: 50%;
 
 }
+

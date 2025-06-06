@@ -39,8 +39,8 @@ function createCard(card) {
                 <img src="assets/img/heart.png" alt="like button" id= "likeimg">
                 <span id="like-count">Like Count: ${card.like_count}</span>
             </button>
-            <button id ="edit-button">Edit</button>
-            <button id ="delete-button">Delete</button>
+            <button id = "edit-button">Edit</button>
+            <button class ="delete-button">Delete</button>
         </div>
     `;
     cardElement.dataset.dateAdded = card.date_added; //hidden element
@@ -55,8 +55,17 @@ function createCard(card) {
         liked = !liked;
         toggleLikes(likeButton, liked)
     });
+
+    const deleteButton = cardElement.querySelector('.delete-button');
+    deleteButton.addEventListener('click', (e) =>{
+        e.stopPropagation();
+        cardElement.remove()
+        return null
+    });
+
     return cardElement;
 }
+
 
 
 
@@ -79,8 +88,6 @@ function toggleLikes(likes, isLiked) {
 document.addEventListener("DOMContentLoaded", () => {
     createCards();
 })
-
-
 
 
 
@@ -230,17 +237,76 @@ selectElement.addEventListener('change', (event) => {
 //search button and function
 
 
-const searchButton = document.getElementById('search-form');
+//renders cards that match criteria
+function returnSearch(text){
+    const cards = Array.from(cardGrid.children);
+    const filteredCards = [];
+    console.log("filtering")
+    if (text === '') {
+        // Reset the card grid to its original state
+        cardGrid.innerHTML = ' ';
+        cards.forEach((card) => {
+            cardGrid.appendChild(card);
+        });
+        return;
+    }
+
+    if (searchChoice.value == "Name"){
+        cards.forEach((card) =>{
+            const cardName = card.querySelector('.playlist-title').textContent.toLowerCase();
+            if (cardName.includes(text.toLowerCase())) {
+                filteredCards.push(card);
+            }
+
+        })
+    } else if (searchChoice.value == "Author"){
+        cards.forEach((card) =>{
+            const cardName = card.querySelector('.author-title').textContent.toLowerCase();
+            if (cardName.includes(text.toLowerCase())) {
+                filteredCards.push(card);
+            }
+        })
+    }
+
+    return filteredCards;
+}
 
 
+const searchChoice = document.getElementById('search-choice');
+const searchForm = document.getElementById('search-form');
+searchChoice.addEventListener('change', (e) => {
+    const selectedValue = e.target.value;
+    if (selectedValue === 'Name' || selectedValue === 'Author') {
+        searchForm.style.display = 'block';
+        searchForm.placeholder = `Search by ${selectedValue}`;
+    } else {
+        searchForm.style.display = 'none';
+    }
+});
+
+searchForm.addEventListener('input', (e) => {
+    const searchText = e.target.value;
+    const newCards = returnSearch(searchText);
+    if (newCards.length > 0) {
+        cardGrid.innerHTML = '';
+        newCards.forEach((card) =>{
+            cardGrid.appendChild(card);
+        })
+    } else {
+        // Reset the card grid to its original state
+        cardGrid.innerHTML = ' ';
+        Array.from(cardGrid.children).forEach((card) => {
+            cardGrid.appendChild(card);
+        });
+    }
+});
 
 
-
-
-
-
+//delete button added ebofre modal
 //add playlist button
 const addPlaylistButton = document.getElementById('add-playlist');
 //grab edit and delete buttons
-const deleteButton = document.getElementById('delete-button');
+
+
+
 const editButton = document.getElementById('edit-button')
