@@ -140,15 +140,15 @@ TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes they did, not as much for stretch features but all core, the tomato timer and virtual book club helped with the popup and adding songs. Nothing unprepared just stretch features weren't easy
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would have added the add playlist and song editing on playlists, but I wanted to clean up some of my code and add comment and fix some of the styling, I didn't want to write just ugly code. I also would have started w dynamic JS instead of hardcoding like instructions said to do
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+Code is clean w lots of comments in javascript file, not finishing stretch features didnt go exactly as planned. Next time I will try and add all stretch features.
 
 ### Open-source libraries used
 
