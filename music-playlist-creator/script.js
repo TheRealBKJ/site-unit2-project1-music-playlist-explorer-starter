@@ -37,7 +37,7 @@ function createCard(card) {
         <div id= "button-container">
             <button class="likeButton">
                 <img src="assets/img/heart.png" alt="like button" id= "likeimg">
-                <span id="like-count">Like Count: 0</span>
+                <span id="like-count">Like Count: ${card.like_count}</span>
             </button>
             <button id ="edit-button">Edit</button>
             <button id ="delete-button">Delete</button>

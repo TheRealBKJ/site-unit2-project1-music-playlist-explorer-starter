@@ -4,6 +4,7 @@
         "playlist_name" :"Summer Feels",
         "playlist_author":"Drake",
         "playlist_art" : "assets/img/images/drake.png",
+        "like_count": 23,
         "songs" : [
             {
                 "song_name": "God's Plan",
@@ -89,6 +90,7 @@
         "playlist_name" :"Iceberg",
         "playlist_author":"Future",
         "playlist_art" : "assets/img/images/future.png",
+        "like_count": 17,
         "songs" : [
             {
                 "song_name": "Mask Off",
@@ -154,6 +156,7 @@
         "playlist_name" :"Opium",
         "playlist_author":"Destroy Lonely",
         "playlist_art" : "assets/img/images/lonely.png",
+        "like_count": 42,
         "songs" : [
             {
                 "song_name": "Nostalgia",
@@ -225,6 +228,7 @@
         "playlist_name" :"Self-Titled",
         "playlist_author":"Playboi Carti",
         "playlist_art" : "assets/img/images/carti.png",
+        "like_count": 31,
         "songs" : [
             {
                 "song_name": "Magnolia",
@@ -310,6 +314,7 @@
         "playlist_name" :"Michigan Boat Boy",
         "playlist_author":"Lil Yachty",
         "playlist_art" : "assets/img/images/yachty.png",
+        "like_count": 19,
         "songs" : [
             {
                 "song_name": "Broccoli",
@@ -367,6 +372,7 @@
         "playlist_name" :"Ganger",
         "playlist_author":"Veeze",
         "playlist_art" : "assets/img/images/veeze.png",
+        "like_count": 10,
         "songs" : [
             {
                 "song_name": "Ganger",
@@ -438,6 +444,7 @@
         "playlist_name" :"The Best Playlist",
         "playlist_author":"Braden Jones",
         "playlist_art" : "assets/img/images/wayne.png",
+        "like_count": 38,
         "songs" : [
             {
                 "song_name": "Happy",
@@ -509,6 +516,7 @@
         "playlist_name" :"Aston Martin Music",
         "playlist_author":"Rick Ross",
         "playlist_art" : "assets/img/images/ross.png",
+        "like_count": 67,
         "songs" : [
             {
                 "song_name": "Hustlin'",
