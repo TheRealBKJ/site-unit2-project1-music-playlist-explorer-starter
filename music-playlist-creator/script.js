@@ -2,30 +2,31 @@
 
 // modal stuff above this
 
+// What I need to work on: define functions, consitency between semicolon use, spacing, maybe chage innerhtml for XSS attacks -> convert to textcontent when creating add playlist??
 
 //logic for making cards
 
-function createCards(){
+function createCards() {
     return fetch('data/data.json')
-    .then(response =>{
-        if (!response){
-            throw new Error("No playlists Added");
-        }
-        return response.json()
-    })
-    .then(data =>{
-        const cardGrid = document.getElementById('playlist-grid')
-        data.forEach(card =>{
-            const playlistcard = createCard(card)
-            cardGrid.appendChild(playlistcard)
+        .then(response => {
+            if (!response) {
+                throw new Error("No playlists Added");
+            }
+            return response.json()
         })
-    })
-    .catch(error => console.error('Error Loading:', error));
+        .then(data => {
+            const cardGrid = document.getElementById('playlist-grid')
+            data.forEach(card => {
+                const playlistcard = createCard(card)
+                cardGrid.appendChild(playlistcard)
+            })
+        })
+        .catch(error => console.error('Error Loading:', error));
 
 
 }
 
-function createCard(card){
+function createCard(card) {
     const cardElement = document.createElement('article')
     cardElement.classList.add('idcards')
     cardElement.innerHTML = `
@@ -37,29 +38,29 @@ function createCard(card){
             <span id="like-count">Like Count: 0</span>
         </button>
     `;
-    cardElement.addEventListener('click', () =>{
-        openModal(card.playlist_name,card.playlist_art, card.playlist_author, card.songs);
+    cardElement.addEventListener('click', () => {
+        openModal(card.playlist_name, card.playlist_art, card.playlist_author, card.songs);
     });
 
     const likeButton = cardElement.querySelector('.likeButton');/* can access child elems easier */
     let liked = false;
     likeButton.addEventListener('click', (e) => {
-        e.stopPropagation();
+        e.stopPropagation(); // can lead to complicated situations, do it based on what was clicked
         liked = !liked;
-        toggleLikes(likeButton,liked)
-    })
+        toggleLikes(likeButton, liked)
+    });
     return cardElement;
 }
 
 
 
-function toggleLikes(likes,isLiked){
+function toggleLikes(likes, isLiked) {
     const likeCountNum = likes.querySelector('#like-count');
     let likeCount = parseInt(likeCountNum.textContent.split(': ')[1])/* Splits like count info */
-    if (isLiked){
+    if (isLiked) {
         likeCount++;
         likes.classList.add('liked')/* diff styling for if liked!*/
-    } else{
+    } else {
         likeCount--;
         likes.classList.remove('liked');
     }
@@ -69,7 +70,7 @@ function toggleLikes(likes,isLiked){
 
 
 // loads the cards into page when rendered
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
     createCards();
 })
 
@@ -83,21 +84,21 @@ const span = document.getElementsByClassName('close')[0];
 const cards = document.querySelectorAll('.idcards')/* get all id cards in website*/
 
 /* i am going to take all the cards and ad an event listener so when a card is clicked a modal of that card and its songs r rendered*/
-function openModal(title,image,artist,songs) {
+function openModal(title, image, artist, songs) {
     document.getElementById('playlistImage').src = image;
     document.getElementById('playlistName').innerText = title;
-    document.getElementById('artistName').innerText= artist ;
+    document.getElementById('artistName').innerText = artist;
 
 
     /* Loads orignal songs in original order */
     const songsContent = document.getElementById('songsCont');
     songsContent.innerHTML = '';
     // assuming each json object has 3 or more songs which needs to be a thing
-    for (let i = 0; i < songs.length; i++){
+    for (let i = 0; i < songs.length; i++) {
         const song = songs[i];
         const songElement = document.createElement('li')
         songElement.classList.add('songBox');
-        songElement.innerHTML =`
+        songElement.innerHTML = `
             <img src="${song.image}" alt="Image of Song" class="song-thumbnail">
             <div class="song-details">
                 <h4 id = 'song-title'> Song: ${song.song_name}</h4>
@@ -116,26 +117,26 @@ function openModal(title,image,artist,songs) {
         const array = Array.from(songs);
         const shuffledSongs = shuffle(array)
         songsContent.innerHTML = '';
-        shuffledSongs.forEach((shuffleSong) =>{
+        shuffledSongs.forEach((shuffleSong) => {
             songsContent.appendChild(shuffleSong);
         });
     });
-    modal.style.display ="block" /* displays modal*/
+    modal.style.display = "block" /* displays modal*/
 }
 
 
 
 /* shuffle function from stackOverFlow*/
-function shuffle(array){
+function shuffle(array) {
     let currentIndex = array.length;
-    
+
     while (currentIndex != 0) {
 
-    let randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
 
-    [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
     }
     return array
 }
@@ -146,21 +147,21 @@ function shuffle(array){
 
 /* add arrays to it later*/
 cards.forEach((card) => {
-    card.addEventListener('click',() =>{
+    card.addEventListener('click', () => {
         const title = card.querySelector('.playlistTitle').textContent;
         const image = card.querySelector('.cardimg').src;
         const artist = card.querySelector('.authorTitle').textContent;
 
-        openModal(title,image,artist, songs);
+        openModal(title, image, artist, songs);
     });
 });
 
 // how to make modal easier to use and click off of close button and grey area
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -171,5 +172,3 @@ window.onclick = function(event) {
 
 
 
-
-                

@@ -78,10 +78,10 @@ footer {
     text-align: center;
     width: 70%;
     height:90%;
-    border-radius: 5%;
-    border: 5px solid  #ffffff;
+    border-radius: 12px;
+    border: 3px solid  #ffffff;
     background-color: green;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .playlist-cards .idcards:hover{
@@ -159,10 +159,10 @@ footer {
     padding: 20px;
     margin-left: 10%;
     margin-top: 5%;
-    border: 10px solid rgb(0, 0, 0);
+    border: 10px solid rgb(255, 255, 255);
     width: 80%;
     height: 80%;
-    border-radius: 3%;
+    border-radius: 20px;
 
 }
 
@@ -310,4 +310,21 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* css for feautered items */
+#content-box{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#album-holder{
+    width: 50%;
+
+}
+
+#song-holder{
+    width: 50%;
+
 }

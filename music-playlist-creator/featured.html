@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>
+        Music Playlist Explorer
+        <span class="links-container">
+          <a
+            href="featured.html"
+            id="featuredroute"
+            class="links-to-another"
+            class="links-to-another"
+            >Featured</a
+          >
+          <a href="index.html" id="allroute" class="links-to-another">All</a>
+        </span>
+      </h1>
+    </header>
+
+    <main>
+      <div id="content-box">
+        <div id="album-holder">
+
+        </div>
+
+        <div id="song-holder">
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Your footer content here -->
+    </footer>
+
+    <script src="data/data.json"></script>
+    <script src="featured.js"></script>
+  </body>
     
-</body>
 </html>
