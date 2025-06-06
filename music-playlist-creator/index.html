@@ -25,15 +25,18 @@
             <button id ="add-playlist">Add a Playlist</button>
 
             <select id="search-choice">
+                <option disabled selected value="0">Search By</option>
                 <option value="Name">Search by Name</option>
                 <option value="Author">Search by Author</option>
             </select>
                 <input id="search-form" type="search" placeholder="Search By:" style="display: none;">
+            <button id="clear-button">Clear Search</button>
             
             
             <!--dropdown menu-->
             <label id = "sort-by">
                 <select id ="dropdown" >
+                    <option disabled selected value="0">Sort By</option>
                     <option id ="by-name" value="Name(A-Z)">Name(A-Z)</option>
                     <option id="likes-count" value="Likes">Likes</option>
                     <option id = "date-added" value="Date Added">Date Added</option>
@@ -66,6 +69,21 @@
                 
                 <!--Got rid of Song Boxes, Going to dynamically load them for easyness-->
             </ul>
+        </div>
+    </div>
+
+
+    <div id="edit-modal">
+        <div id="edit-author">
+            <input id="edit-author-input" placeholder="New Author"> 
+        </div>
+
+        <div id="edit-name">
+            <input id="edit-name-input" type="text" placeholder="New Name">
+        </div>
+        <div id="change-saver">
+        <button id="save-changes">Save Changes</button>
+        <span id="save-span">Save</span>
         </div>
     </div>
 
