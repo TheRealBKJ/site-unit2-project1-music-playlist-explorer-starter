@@ -450,7 +450,7 @@
         "playlist_name" :"The Best Playlist",
         "playlist_author":"Braden Jones",
         "playlist_art" : "assets/img/images/wayne.png",
-        "like_count": 38,
+        "like_count": 0,
         "date_added": "2025-04-22T12:00:00.000Z",
         "songs" : [
             {
