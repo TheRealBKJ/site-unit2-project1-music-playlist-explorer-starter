@@ -23,7 +23,6 @@ function createCards() {
         })
         .catch(error => console.error('Error Loading:', error));
 
-
 }
 
 function createCard(card) {
