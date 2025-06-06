@@ -30,12 +30,18 @@ function createCard(card) {
     cardElement.classList.add('idcards')
     cardElement.innerHTML = `
         <img class="cardimg" src="${card.playlist_art}" alt="photo of playlist">
-        <h2 class="playlistTitle">${card.playlist_name}</h2>
-        <p class="authorTitle">${card.playlist_author}</p>
-        <button class="likeButton">
-            <img src="assets/img/heart.png" alt="like button" id= "likeimg">
-            <span id="like-count">Like Count: 0</span>
-        </button>
+        <div id ="text-container-card">
+            <h2 class="playlist-title">${card.playlist_name}</h2>
+            <p class="author-title">${card.playlist_author}</p>
+        </div>
+        <div id= "button-container">
+            <button class="likeButton">
+                <img src="assets/img/heart.png" alt="like button" id= "likeimg">
+                <span id="like-count">Like Count: 0</span>
+            </button>
+            <button id ="edit-button">Edit</button>
+            <button id ="delete-button">Delete</button>
+        </div>
     `;
     cardElement.addEventListener('click', () => {
         openModal(card.playlist_name, card.playlist_art, card.playlist_author, card.songs);

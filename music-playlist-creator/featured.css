@@ -12,6 +12,10 @@ header {
     border: 5px solid #1ed760;
 }
 
+#header-title{
+    margin-left: 100px;
+}
+
 footer {
     background-color: #ffffff;
     bottom: 0;
@@ -71,7 +75,6 @@ footer {
     margin-top: 100px;
     max-height: 500px;
     overflow-y: auto;
-    border: 8px solid rgb(255, 255, 255);
 }
 
 .song-box {

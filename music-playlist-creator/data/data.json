@@ -3,7 +3,7 @@
         "playlistID" : 1 , 
         "playlist_name" :"Summer Feels",
         "playlist_author":"Drake",
-        "playlist_art" : "https://picsum.photos/id/237/200/300",
+        "playlist_art" : "assets/img/images/drake.png",
         "songs" : [
             {
                 "song_name": "God's Plan",
@@ -88,7 +88,7 @@
         "playlistID" : 2, 
         "playlist_name" :"Iceberg",
         "playlist_author":"Future",
-        "playlist_art" : "https://picsum.photos/seed/picsum/200/300",
+        "playlist_art" : "assets/img/images/future.png",
         "songs" : [
             {
                 "song_name": "Mask Off",
@@ -153,7 +153,7 @@
         "playlistID" : 3, 
         "playlist_name" :"Opium",
         "playlist_author":"Destroy Lonely",
-        "playlist_art" : "https://picsum.photos/200/300?grayscale",
+        "playlist_art" : "assets/img/images/lonely.png",
         "songs" : [
             {
                 "song_name": "Nostalgia",
@@ -224,7 +224,7 @@
         "playlistID" : 4, 
         "playlist_name" :"Self-Titled",
         "playlist_author":"Playboi Carti",
-        "playlist_art" : "https://picsum.photos/200/300/?blur",
+        "playlist_art" : "assets/img/images/carti.png",
         "songs" : [
             {
                 "song_name": "Magnolia",
@@ -276,7 +276,7 @@
                 "duration": "3:35"
             },
             {
-                "song_name": "Do That Shit",
+                "song_name": "Do That Stuff",
                 "artist_name": "Playboi Carti",
                 "album_name": "Self-Titled",
                 "image": "https://picsum.photos/200/300?random=8",
@@ -309,7 +309,7 @@
         "playlistID" : 5, 
         "playlist_name" :"Michigan Boat Boy",
         "playlist_author":"Lil Yachty",
-        "playlist_art" : "https://picsum.photos/id/870/200/300?grayscale&blur=2",
+        "playlist_art" : "assets/img/images/yachty.png",
         "songs" : [
             {
                 "song_name": "Broccoli",
@@ -366,7 +366,7 @@
         "playlistID" : 6, 
         "playlist_name" :"Ganger",
         "playlist_author":"Veeze",
-        "playlist_art" : "https://picsum.photos/201/300",
+        "playlist_art" : "assets/img/images/veeze.png",
         "songs" : [
             {
                 "song_name": "Ganger",
@@ -437,7 +437,7 @@
         "playlistID" : 7, 
         "playlist_name" :"The Best Playlist",
         "playlist_author":"Braden Jones",
-        "playlist_art" : "https://picsum.photos/200/300",
+        "playlist_art" : "assets/img/images/wayne.png",
         "songs" : [
             {
                 "song_name": "Happy",
@@ -508,7 +508,7 @@
         "playlistID" : 8, 
         "playlist_name" :"Aston Martin Music",
         "playlist_author":"Rick Ross",
-        "playlist_art" : "https://picsum.photos/199/300",
+        "playlist_art" : "assets/img/images/ross.png",
         "songs" : [
             {
                 "song_name": "Hustlin'",

@@ -21,6 +21,46 @@ footer {
     position: fixed;
     border: 5px solid #1ed760;
 }
+#action-container{
+    display: flex;
+    background-color: #1ed760;
+    height: 50px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* css for search, sort and add new playlist */
+/* css for search, sort and add new playlist */
+#add-playlist {
+    border: 3px solid #1ed760;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#add-playlist:hover{
+
+}
+#sort-by {
+    border: 3px solid #1ed760;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#search-form{
+    border: 3px solid #1ed760;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* css for links*/
 .links-container{
     float: right;
     margin-right:10px;
@@ -93,6 +133,24 @@ footer {
     width: 80%;
     height: 50%;
     margin-top: 10%;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+#text-container-card{
+    display: grid;
+    justify-content: center;
+    height:40px
+}
+
+.playlist-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.author-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
 }
 
 
@@ -126,6 +184,32 @@ footer {
     transform: scale(1.1);
 }
 
+#button-container{
+    margin-top: 20px;
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+#edit-button{
+    text-align: center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 3px;
+}
+
+#delete-button{
+    text-align: center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 3px;
+
+}
 
 .liked{
     background-color: green;

@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Music Playlist Explorer 
+        <h1 id ="header-title">Music Playlist Explorer 
             <span class="links-container">
                 <a href= "featured.html" id="featuredroute" class = "links-to-another" class = "links-to-another">Featured</a> 
                 <a href= "index.html" id="allroute" class="links-to-another">All</a>
@@ -20,7 +20,24 @@
         
     </header>
 
-    <main> 
+    <main>
+        <div id = "action-container">
+            <button id ="add-playlist">Add a Playlist</button>
+            <form id = "search-form">Search by</form>
+            
+            <!--dropdown menu-->
+            <label id = "sort-by">Sort By
+                <select id ="dropdown">
+                    <option id ="by-name">Name(A-Z)</option>
+                    <option id="likes-count">Likes</option>
+                    <option id = "date-added">Date Added</option>
+                </select>
+            </label>
+        </div>
+
+
+
+
         <!-- Your main content here -->
          <section class="playlist-cards" id ="playlist-grid">
 
