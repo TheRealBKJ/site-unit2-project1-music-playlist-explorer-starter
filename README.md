@@ -54,24 +54,24 @@ Deployed Application (https://music-playlist-4nce.onrender.com/): [Music Playlis
       - [ ] a playlist with a like count of 0
       - [ ] a playlist with a non-zero like count
 
-- [ ] **Shuffle Songs**
-  - [ ] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
-  - [ ] When the shuffle button is clicked, the playlist's songs should display in a different order.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
+- [x] **Shuffle Songs**
+  - [x] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
+  - [x] When the shuffle button is clicked, the playlist's songs should display in a different order.
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
   
-- [ ] **Featured Page**
-  - [ ] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
-    - [ ] Playlist Image
-    - [ ] Playlist Name
-    - [ ] List of songs, including each song's:
-      - [ ] Title
-      - [ ] Artist
-      - [ ] Duration
-  - [ ] When the page is refreshed or reloaded, a new random playlist is displayed
+- [x] **Featured Page**
+  - [x] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
+    - [x] Playlist Image
+    - [x] Playlist Name
+    - [x] List of songs, including each song's:
+      - [x] Title
+      - [x] Artist
+      - [x] Duration
+  - [x] When the page is refreshed or reloaded, a new random playlist is displayed
     - For example, navigating to the all playlists page and then back to the featured playlist page should result in a new random playlist being displayed
     - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row. 
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
-  - [ ] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
+    - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
+  - [x] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
 
 #### STRETCH FEATURES
 
@@ -134,7 +134,7 @@ Deployed Application (https://music-playlist-4nce.onrender.com/): [Music Playlis
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+`<div style="position: relative; padding-bottom: 66.50246305418719%; height: 0;"><iframe src="https://www.loom.com/embed/2d004d1116054795a271aee50848cc05?sid=ef2ec70f-4492-4cf2-ae06-5009317d7e4e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
 
 ### Reflection
 
@@ -156,4 +156,5 @@ Add your response here
 
 ### Shout out
 
+Shout out to Dijon Miller, Yaw Boateng, and Matthew Noble
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
