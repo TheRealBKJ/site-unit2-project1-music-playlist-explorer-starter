@@ -5,6 +5,7 @@
         "playlist_author":"Drake",
         "playlist_art" : "assets/img/images/drake.png",
         "like_count": 23,
+        "date_added" : "2022-07-25T14:30:00.000Z",
         "songs" : [
             {
                 "song_name": "God's Plan",
@@ -91,6 +92,7 @@
         "playlist_author":"Future",
         "playlist_art" : "assets/img/images/future.png",
         "like_count": 17,
+        "date_added" : "2023-01-10T12:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Mask Off",
@@ -157,6 +159,7 @@
         "playlist_author":"Destroy Lonely",
         "playlist_art" : "assets/img/images/lonely.png",
         "like_count": 42,
+        "date_added": "2021-03-15T14:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Nostalgia",
@@ -229,6 +232,7 @@
         "playlist_author":"Playboi Carti",
         "playlist_art" : "assets/img/images/carti.png",
         "like_count": 31,
+        "date_added": "2020-08-20T12:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Magnolia",
@@ -315,6 +319,7 @@
         "playlist_author":"Lil Yachty",
         "playlist_art" : "assets/img/images/yachty.png",
         "like_count": 19,
+        "date_added": "2019-10-05T12:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Broccoli",
@@ -373,6 +378,7 @@
         "playlist_author":"Veeze",
         "playlist_art" : "assets/img/images/veeze.png",
         "like_count": 10,
+        "date_added": "2024-12-31T12:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Ganger",
@@ -445,6 +451,7 @@
         "playlist_author":"Braden Jones",
         "playlist_art" : "assets/img/images/wayne.png",
         "like_count": 38,
+        "date_added": "2025-04-22T12:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Happy",
@@ -517,6 +524,7 @@
         "playlist_author":"Rick Ross",
         "playlist_art" : "assets/img/images/ross.png",
         "like_count": 67,
+        "date_added": "2026-06-18T12:00:00.000Z",
         "songs" : [
             {
                 "song_name": "Hustlin'",

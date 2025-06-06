@@ -43,6 +43,7 @@ function createCard(card) {
             <button id ="delete-button">Delete</button>
         </div>
     `;
+    cardElement.dataset.dateAdded = card.date_added; //hidden element
     cardElement.addEventListener('click', () => {
         openModal(card.playlist_name, card.playlist_art, card.playlist_author, card.songs);
     });
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const modal = document.getElementById('playlistModal'); /* grabs the html for a modal for playlist*/
 const span = document.getElementsByClassName('close')[0];
-const cards = document.querySelectorAll('.idcards')/* get all id cards in website*/
+const cards = document.querySelectorAll(document.getElementById(''))/* get all id cards in website*/
 
 /* i am going to take all the cards and ad an event listener so when a card is clicked a modal of that card and its songs r rendered*/
 function openModal(title, image, artist, songs) {
@@ -173,7 +174,73 @@ window.onclick = function (event) {
 }
 
 
+//code for stretch features
+
+
+//how to get which sort to do and peform it, builds array of cards based on which one and then sorts
+
+function sortCards(cards, sortBy) {
+    console.log("sorting");
+    switch (sortBy) {
+        case 'Name(A-Z)':
+            cards.sort((a, b) => {
+                const aName = a.querySelector('.playlist-title').textContent;
+                const bName = b.querySelector('.playlist-title').textContent;
+                return aName.localeCompare(bName); // Alphabetical order
+            });
+            break;
+        case 'Likes':
+            cards.sort((a, b) => {
+                const aLikes = parseInt(a.querySelector('#like-count').textContent.split(': ')[1]);
+                const bLikes = parseInt(b.querySelector('#like-count').textContent.split(': ')[1]);
+                console.log("sorting by like")
+                return bLikes - aLikes; // Descending order
+            });
+            break;
+        default: // Date added
+            cards.sort((a, b) => {
+                const aDate = new Date(a.dataset.dateAdded);
+                const bDate = new Date(b.dataset.dateAdded);
+                console.log(aDate);
+                console.log(bDate);
+                return aDate.getTime() - bDate.getTime();//descneding order
+            });
+            break;
+    }
+    return cards;
+}
+
+
+const selectElement = document.getElementById('dropdown');
+const cardGrid = document.getElementById('playlist-grid');
+
+
+selectElement.addEventListener('change', (event) => {
+    const selectedValue = event.target.value;
+    console.log("Selected value:", selectedValue);
+    const cardsSwitch = Array.from(cardGrid.children);
+    const sortedCards = sortCards(cardsSwitch, selectedValue);
+    cardGrid.innerHTML = ''; // Clear the existing cards
+    sortedCards.forEach((card) => {
+        cardGrid.appendChild(card); // Append each card individually
+    });
+});
+
+
+//search button and function
+
+
+const searchButton = document.getElementById('search-form');
 
 
 
 
+
+
+
+
+//add playlist button
+const addPlaylistButton = document.getElementById('add-playlist');
+//grab edit and delete buttons
+const deleteButton = document.getElementById('delete-button');
+const editButton = document.getElementById('edit-button')

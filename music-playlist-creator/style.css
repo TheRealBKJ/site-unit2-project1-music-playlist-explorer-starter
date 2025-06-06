@@ -30,9 +30,9 @@ footer {
 }
 
 /* css for search, sort and add new playlist */
-/* css for search, sort and add new playlist */
 #add-playlist {
     border: 3px solid #1ed760;
+    border-radius: 5px;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
@@ -41,8 +41,17 @@ footer {
 }
 
 #add-playlist:hover{
-
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
 }
+
+#add-playlist:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #sort-by {
     border: 3px solid #1ed760;
     padding: 10px;
@@ -51,13 +60,35 @@ footer {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
-#search-form{
-    border: 3px solid #1ed760;
+
+#dropdown {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+#dropdown option {
+    background-color: #fff;
     padding: 10px;
     font-size: 16px;
+}
+#dropdown option:hover {
+    background-color: #ccc;
+}
+
+#search-form{
     cursor: pointer;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 7px;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
 }
 
 /* css for links*/
@@ -125,6 +156,11 @@ footer {
 }
 
 .playlist-cards .idcards:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.playlist-cards .idcards:hover{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     transform: scale(1.1);
@@ -166,6 +202,8 @@ footer {
 }
 
 
+
+
 #likeimg{
     width: 20px;
     height: 20px;
@@ -182,6 +220,7 @@ footer {
     background-color: rgb(230, 38, 17);
     color: rgb(217, 228, 8);
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 #button-container{

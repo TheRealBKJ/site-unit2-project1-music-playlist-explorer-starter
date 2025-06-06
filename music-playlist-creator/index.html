@@ -23,14 +23,14 @@
     <main>
         <div id = "action-container">
             <button id ="add-playlist">Add a Playlist</button>
-            <form id = "search-form">Search by</form>
+            <input id = "search-form" type="search" placeholder = "Search By:"></input>
             
             <!--dropdown menu-->
-            <label id = "sort-by">Sort By
+            <label id = "sort-by">
                 <select id ="dropdown">
-                    <option id ="by-name">Name(A-Z)</option>
-                    <option id="likes-count">Likes</option>
-                    <option id = "date-added">Date Added</option>
+                    <option id ="by-name" value="Name(A-Z)">Name(A-Z)</option>
+                    <option id="likes-count" value="Likes">Likes</option>
+                    <option id = "date-added" value="Date Added">Date Added</option>
                 </select>
             </label>
         </div>
